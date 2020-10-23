@@ -1,0 +1,153 @@
+//Fonts
+@font-face { font-family: 'MazzardM_Regular';
+    src: url('../fonts/MazzardM-Regular.ttf'); }
+@font-face { font-family: 'MazzardM_Medium';
+    src: url('../fonts/MazzardM-Medium.ttf'); } 
+@font-face { font-family: 'MazzardM_Light';
+    src: url('../fonts/MazzardM-Light.ttf'); }
+@font-face { font-family: 'MazzardM_Bold';
+    src: url('../fonts/MazzardM-Bold.ttf'); }            
+
+.mazzreg(){font-family: 'MazzardM_Regular', sans-serif;}
+.mazzmed(){font-family: 'MazzardM_Medium', sans-serif;}
+.mazzlight(){font-family: 'MazzardM_Light', sans-serif;}
+.mazzbold(){font-family: 'MazzardM_Bold', sans-serif;}
+.opensans(){font-family: 'Open Sans', sans-serif;}
+
+
+//Colors
+@light: #fff;
+@osnova: #381ED4;
+@text: #242625;
+@dop: #F2994A;
+@text_gray:#959595;
+@block_gray:#D9DFFC;
+@text_gray_two:#757575;
+
+
+//Basic
+
+html{
+    font-size: 10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+input,
+input:active,
+input:focus{
+	outline: none;
+}
+textarea,
+textarea:active,
+textarea:focus{
+	outline: none;
+}
+a,
+a:active,
+a:focus{
+	outline: none;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.stop{
+    overflow-y: hidden;
+}
+.button{
+    border: none;
+    cursor: pointer;
+    background-color: @dop;
+    color: @light;
+    .mazzbold();
+    border-radius: 1.2rem;
+    transition: 0.3s;
+    &:hover{
+        background-color: @osnova;
+    }
+}
+
+//HOME
+.home{
+    &-first_window{
+        padding-top: 28rem;
+        background: url(../img/home/first_window/bg.png) no-repeat center center;
+        background-size: cover;
+        padding-bottom: 15rem;
+        &-span{
+            .mazzmed();
+            color: @text_gray;
+            font-size: 1.6rem;
+        }
+        &-title{
+            .mazzbold();
+            color: @text;
+            font-size: 4rem;
+            padding-top: 2.6rem;
+            margin-bottom: 5rem;
+        }
+        &-paragraph{
+            .mazzmed();
+            font-size: 1.8rem;
+            color: @text_gray_two;
+            padding: 0;
+            margin-bottom: 5rem;
+        }
+        &-button{
+            font-size: 1.8rem;
+            padding: 1.6rem 5.6rem;
+        }
+    }
+}
+
+//Media
+@media(max-width: 1200px){
+    .home{
+        &-first_window{
+            padding-top: 14rem;
+            padding-bottom: 8rem;
+            &-span{
+                font-size: 1.2rem;
+            }
+            &-title{
+                padding-top: 2rem;
+                font-size: 2.4rem;
+                margin-bottom: 3rem;
+            }
+            &-paragraph{
+                font-size: 1rem;
+                margin-bottom: 3rem;
+            }
+            &-button{
+                padding: 0.8rem 3rem;
+            }
+        }
+    }
+}
+@media(max-width: 450px){
+    .home{
+        &-first_window{
+            padding-bottom: 12rem;
+            &-span{
+                font-size: 1.4rem;
+            }
+            &-title{
+                font-size: 2rem;
+                margin-bottom: 2.5rem;
+            }
+            &-paragraph{
+                margin-bottom: 4rem;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

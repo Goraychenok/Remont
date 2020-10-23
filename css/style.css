@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'MazzardM_Regular';
+  src: url('../fonts/MazzardM-Regular.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Medium';
+  src: url('../fonts/MazzardM-Medium.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Light';
+  src: url('../fonts/MazzardM-Light.ttf');
+}
+@font-face {
+  font-family: 'MazzardM_Bold';
+  src: url('../fonts/MazzardM-Bold.ttf');
+}
+html {
+  font-size: 10px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+button,
+button:active,
+button:focus {
+  outline: none;
+}
+input,
+input:active,
+input:focus {
+  outline: none;
+}
+textarea,
+textarea:active,
+textarea:focus {
+  outline: none;
+}
+a,
+a:active,
+a:focus {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.stop {
+  overflow-y: hidden;
+}
+.button {
+  border: none;
+  cursor: pointer;
+  background-color: #f2994a;
+  color: #ffffff;
+  font-family: 'MazzardM_Bold', sans-serif;
+  border-radius: 1.2rem;
+  transition: 0.3s;
+}
+.button:hover {
+  background-color: #381ed4;
+}
+.home-first_window {
+  padding-top: 28rem;
+  background: url(../img/home/first_window/bg.png) no-repeat center center;
+  background-size: cover;
+  padding-bottom: 15rem;
+}
+.home-first_window-span {
+  font-family: 'MazzardM_Medium', sans-serif;
+  color: #959595;
+  font-size: 1.6rem;
+}
+.home-first_window-title {
+  font-family: 'MazzardM_Bold', sans-serif;
+  color: #242625;
+  font-size: 4rem;
+  padding-top: 2.6rem;
+  margin-bottom: 5rem;
+}
+.home-first_window-paragraph {
+  font-family: 'MazzardM_Medium', sans-serif;
+  font-size: 1.8rem;
+  color: #757575;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+.home-first_window-button {
+  font-size: 1.8rem;
+  padding: 1.6rem 5.6rem;
+}
+@media (max-width: 1200px) {
+  .home-first_window {
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+  }
+  .home-first_window-span {
+    font-size: 1.2rem;
+  }
+  .home-first_window-title {
+    padding-top: 2rem;
+    font-size: 2.4rem;
+    margin-bottom: 3rem;
+  }
+  .home-first_window-paragraph {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+  .home-first_window-button {
+    padding: 0.8rem 3rem;
+  }
+}
+@media (max-width: 450px) {
+  .home-first_window {
+    padding-bottom: 12rem;
+  }
+  .home-first_window-span {
+    font-size: 1.4rem;
+  }
+  .home-first_window-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .home-first_window-paragraph {
+    margin-bottom: 4rem;
+    font-size: 1.1rem;
+  }
+}
