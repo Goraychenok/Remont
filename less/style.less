@@ -130,13 +130,19 @@ a:hover{
 	overflow: hidden;
 }
 .header__button{
-    font-size: 1.6rem;
-    padding: 1.2rem 4rem;
-    color: @light;
+    padding: 1.2rem 0rem;
     border:none;
     border-radius: 1rem;
     margin-left: 4rem;
     transition: 0.3s;
+    &-link{
+        font-size: 1.6rem;
+    padding: 1.2rem 4rem;
+    color: @light;
+    &:hover{
+        color: @light;
+    }
+    }
 }
 .header__block{
     display: none;
@@ -704,6 +710,9 @@ a:hover{
     }
     .header__button{
         display: none;
+        &-link{
+            display: none;
+        }
     }
 
 
